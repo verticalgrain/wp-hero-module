@@ -1,0 +1,163 @@
+[
+    {
+        "key": "group_54c6cd5cd2765",
+        "title": "Module Hero Image Gallery",
+        "fields": [
+            {
+                "key": "field_54cbc7210c2b7",
+                "label": "Hero Gallery",
+                "name": "hero_gallery",
+                "prefix": "",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": 1,
+                "max": "",
+                "layout": "row",
+                "button_label": "Add Hero Image",
+                "sub_fields": [
+                    {
+                        "key": "field_54cbc72f0c2b8",
+                        "label": "Hero Image",
+                        "name": "hero_image",
+                        "prefix": "",
+                        "type": "image",
+                        "instructions": "If more than 1 image is added, the images will be displayed as a gallery. Recommended minimum image dimensions are 1550px wide by 815px tall.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "hero",
+                        "library": "all"
+                    },
+                    {
+                        "key": "field_54cbc7410c2b9",
+                        "label": "Hero Title",
+                        "name": "hero_title",
+                        "prefix": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_54cbc74a0c2ba",
+                        "label": "Hero Description",
+                        "name": "hero_text",
+                        "prefix": "",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_54cbf8a4a4862",
+                        "label": "Hero text color",
+                        "name": "hero_text_color",
+                        "prefix": "",
+                        "type": "color_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "#333333"
+                    },
+                    {
+                        "key": "field_54cbc7580c2bb",
+                        "label": "Text alignment",
+                        "name": "hero_text_alignment",
+                        "prefix": "",
+                        "type": "radio",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "text-left": "Left",
+                            "text-right": "Right"
+                        },
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "",
+                        "layout": "vertical"
+                    },
+                    {
+                        "key": "field_54cbff7916ba6",
+                        "label": "Overlay color",
+                        "name": "overlay_color",
+                        "prefix": "",
+                        "type": "color_picker",
+                        "instructions": "If an overlay color is set, the opaque overlay will be displayed.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "56"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "field",
+        "hide_on_screen": [
+            "the_content"
+        ]
+    }
+]

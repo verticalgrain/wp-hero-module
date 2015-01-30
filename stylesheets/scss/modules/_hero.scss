@@ -1,0 +1,85 @@
+.hero {
+	.gallery.gallery-hero {
+	  margin: 0;
+	  margin-bottom: 0;
+	  .item {
+	  	@include heroheight;
+	  	position: relative;
+	  	background-size: auto 100%;
+	  	background-size: cover;
+	  	background-repeat: no-repeat;
+	  	background-position: center center;
+  		.hero-overlay {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				z-index: 1;
+				opacity: 0.75;
+			}
+		  .hero-text {
+		  	@include heroheight;
+				width: 100%;
+				display: table;
+				position: relative;
+				z-index: 5;
+				.hero-text-inner {
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+			h1 {
+
+			}
+			h2 {
+
+			}
+			&.text-right {
+				h1, h2, p {
+					padding-left: 50%;
+					@media (max-width: $breakpoint-smaller) {
+						padding-left: 0;
+					}
+				}
+			}
+
+	  }
+	}
+	a.next-slide {
+		display: none;
+	}
+	.owl-controls {
+		a.next-slide {
+			display: block;
+		}
+	}
+
+  .owl-controls {
+    position: absolute;
+    margin: 0;
+    left: 13px;
+    bottom: 15px;
+    .owl-pagination {
+      line-height: 0;
+      float: left;
+    }
+    .owl-page span {
+      @include transition-duration(0.3s);
+			@include rgba-background(rgba(#fff, .5));
+    }
+  	.next-slide {
+			height: 22px;
+			width: 22px;
+			float: left;
+			padding: 4px 0 0 20px;
+      @include transition-duration(0.3s);
+			color: rgba(255,255,255,0.7);
+			&:hover {
+				color: white;
+			}
+		}
+  }
+  .owl-controls .owl-page.active span,
+	.owl-controls.clickable .owl-page:hover span {
+    background: #fff;
+  }
+}
