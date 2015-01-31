@@ -16,7 +16,17 @@ A responsive, full screen image hero gallery, for Wordpress themes using the [Do
 
 Installing this module assumes you're using the Domain7 WP Theme Boilerplate, including sassyplate and gruntyplate, and have the ACF plugin installed.
 
-- Add owl.carousel.js, hero.js, hero.scss, and hero.php to your theme in the respective directories, and include each of the files in your theme
+- Add the following files to your theme, in the respective directories:
+```
+js/src/modules/hero.js
+js/src/vendor/owl.carousel.js
+partials/hero.php
+stylesheets/scss/modules/hero.scss
+stylesheets/scss/vendor/owl.carousel.scss
+stylesheets/scss/vendor/owl.theme.scss
+stylesheets/scss/vendor/owl.transitions.scss
+```
+- Include each of the files in your theme (if using gruntyplate, the js files should be automatically watched by grunt).
 - in WP admin, import the acf field group (acf-export-2015-01-30.json) using the ACF import feature.
 - Assign the field group to a page (page must set to use page template that contains hero.php)
 - Fill in ACF fields on the page
