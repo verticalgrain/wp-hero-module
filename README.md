@@ -1,7 +1,7 @@
 # wp-hero-module
 Responsive hero gallery module for Wordpress themes - SCSS, Partial, JS, ACF fields.
 
-[Demo](http://kasian.php-dev.domain7.com/careers)
+[Screenshot](http://i.imgur.com/D7I1Ask.jpg)
 
 A responsive, full screen image hero gallery, for Wordpress themes using the [Domain7 theme boilerplate](https://bitbucket.org/domain7/wp-theme_boilerplate/src), including Sassy-plate and grunty-plate. Uses [Owl Carousel](http://owlgraphic.com/owlcarousel/) to power the gallery. Includes an ACF group with fields for the following content:
 
@@ -11,6 +11,8 @@ A responsive, full screen image hero gallery, for Wordpress themes using the [Do
 - Hero image description
 - Text color
 - Text alignment (left or right)
+
+All fields are optional, and if only a single slide is used, it will be displayed as an image instead of a gallery. 
 
 ## Set up
 
