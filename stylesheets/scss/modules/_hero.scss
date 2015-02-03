@@ -1,3 +1,16 @@
+// Set the height of the hero, at various breakpoints
+@mixin heroheight {
+	height: 595px;// vh units are buggy in iOS - set explicit height fallback for iOS
+	height: calc(100vh - #{$navbar-height-full});
+	@media (max-width: $breakpoint-smaller) {
+		height: 410px;// vh units are buggy in iOS - set explicit height fallback for iOS
+		height: calc(100vh - #{$navbar-height-collapsed});
+	}
+	@media (max-width: $breakpoint-smaller) and (orientation: landscape) {
+		height: 250px;// vh units are buggy in iOS - set explicit height fallback for iOS
+	}
+}
+
 .hero {
 	.gallery.gallery-hero {
 	  margin: 0;
