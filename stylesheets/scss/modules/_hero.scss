@@ -1,10 +1,10 @@
 // Set the height of the hero, at various breakpoints
 @mixin heroheight {
 	height: 595px;// vh units are buggy in iOS - set explicit height fallback for iOS
-	height: calc(100vh - #{$navbar-height-full});
+	height: 100vh;
 	@media (max-width: $breakpoint-smaller) {
 		height: 410px;// vh units are buggy in iOS - set explicit height fallback for iOS
-		height: calc(100vh - #{$navbar-height-collapsed});
+		height: 100vh;
 	}
 	@media (max-width: $breakpoint-smaller) and (orientation: landscape) {
 		height: 250px;// vh units are buggy in iOS - set explicit height fallback for iOS
@@ -76,8 +76,8 @@
       float: left;
     }
     .owl-page span {
-      @include transition-duration(0.3s);
-			@include rgba-background(rgba(#fff, .5));
+      	@include transition-duration(0.3s);
+		background: rgba(255,255,255,0.5)
     }
   	.next-slide {
 			height: 22px;
